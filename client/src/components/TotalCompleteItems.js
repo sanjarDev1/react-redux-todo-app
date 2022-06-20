@@ -5,7 +5,7 @@ const TotalCompleteItems = () => {
 	const todos = useSelector((state) =>
 		state.todos.filter((todo) => todo.completed === true)
 	);
-
+	console.log(todos);
 	return <h4 className='mt-3'>Total complete items: {todos.length}</h4>;
 };
 
